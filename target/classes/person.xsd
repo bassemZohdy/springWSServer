@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/person"
+	xmlns:tns="http://www..test.spring.org/person" elementFormDefault="qualified"
+	xmlns:Q1="http://www.example.org/person">
+	<complexType name="person" id="person">
+		<sequence>
+			<element name="firstName" type="string"></element>
+			<element name="lastName" type="string"></element>
+			<element name="serial" type="integer"></element>
+			<element name="birthDate" type="date" nillable="true"></element>
+		</sequence>
+	</complexType>
+
+	<element name="getPersonResponse">
+		<complexType>
+			<sequence>
+				<element name="person" type="Q1:person"></element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="createPersonRequest">
+		<complexType>
+			<sequence>
+				<element name="person" type="Q1:person"></element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getPersonRequest">
+		<complexType>
+			<sequence>
+				<element name="id" type="long"></element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="createPersonResponse">
+		<complexType>
+			<sequence>
+				<element name="id" type="long"></element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

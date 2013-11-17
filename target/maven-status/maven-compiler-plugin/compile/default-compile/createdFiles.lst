@@ -1,0 +1,10 @@
+org\spring\test\www\GetPersonResponse.class
+org\spring\test\www\CreatePersonRequest.class
+org\spring\test\endpoint\GetPersonEndPoint.class
+org\spring\test\www\ObjectFactory.class
+org\spring\test\www\GetPersonRequest.class
+org\spring\test\www\Person.class
+org\spring\test\service\PersonService.class
+org\spring\test\endpoint\CreatePersonEndPoint.class
+org\spring\test\www\package-info.class
+org\spring\test\www\CreatePersonResponse.class
